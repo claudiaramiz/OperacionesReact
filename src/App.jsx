@@ -39,7 +39,10 @@ function App() {
       }}>Multiplicar</button>
       </div>
       <div className="col-4">
-      <button name="btnDividir">Dividir</button>
+      <button name="btnDividir"onClick={()=>{
+        const { one, two } = number
+        setSuma(Number(one) / Number(two))
+      }}>Dividir</button>
       </div>
       <div className="col-4">
       <label>Total</label>
