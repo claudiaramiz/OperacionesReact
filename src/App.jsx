@@ -131,6 +131,27 @@ import "./App.css";
       >
         Sumar
       </button>
+      <button
+        onClick={() => {
+          restar((current) => [{ numberOne, numberTwo }, ...current]);
+        }}
+      >
+        Restar
+      </button>
+      <button
+        onClick={() => {
+          dividir((current) => [{ numberOne, numberTwo }, ...current]);
+        }}
+      >
+        Dividir
+      </button>
+      <button
+        onClick={() => {
+          multiplicar((current) => [{ numberOne, numberTwo }, ...current]);
+        }}
+      >
+        Multiplicar
+      </button>
         </div>
 
       <input
