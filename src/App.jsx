@@ -27,7 +27,10 @@ function App() {
       }}>Sumar</button>
       </div>
       <div className="col-4">
-      <button name="btnRestar">Restar</button>
+      <button name="btnRestar"onClick={()=>{
+        const { one, two } = number
+        setSuma(Number(one) - Number(two))
+      }}>Restar</button>
       </div>
       <div className="col-4">
       <button name="btnMultiplicar">Multiplicar</button>
