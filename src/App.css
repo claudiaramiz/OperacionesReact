@@ -49,11 +49,10 @@
 
 .card{
   border: 1px solid salmon;
-  display: inline-block;
+  display: -moz-grid-line;
   height: 95%;
   padding: 10px;
   width: 75%;
-  vertical-align: middle;
 }
 
 .card-header{
@@ -72,4 +71,11 @@
 .card-footer{
   color: gray;
   text-align: center;
+}
+
+.card-button{
+  display: inline-flex;
+  height: 20%;
+  width: 20%;
+  vertical-align: middle;
 }
