@@ -46,3 +46,30 @@
 {
   color: blue;
 }
+
+.card{
+  border: 1px solid salmon;
+  display: inline-block;
+  height: 95%;
+  padding: 10px;
+  width: 75%;
+  vertical-align: middle;
+}
+
+.card-header{
+  padding: 10px;
+  margin-botton: 5px;
+  font-size: 20px;
+}
+
+.card-body{
+  font-size: 18px;
+  color: black;
+  width: 50%;
+  padding: 5px;
+}
+
+.card-footer{
+  color: gray;
+  text-align: center;
+}

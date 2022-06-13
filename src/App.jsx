@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import "./App.css";
+import "./bootstrap.min.css";
 
 function App() {
 
@@ -14,11 +15,12 @@ function App() {
   }
 
   return (
-    <div className="row">
-      <div className="col-4">
+    <div className="card">
+      <div className="card-body">
       <input className="input" onChange={handleInput} name="one" value={number.one} placeholder="Ingesa un numero"/>
+      </div>
+      <div className="card-body">
       <input className="input" onChange={handleInput} name="two" value={number.two} placeholder="Ingesa un numero"/>
-      <input value={suma}/>
       </div>
       <div className="col-4">
       <button name="btnSumar" onClick={()=>{
@@ -44,9 +46,8 @@ function App() {
         setSuma(Number(one) / Number(two))
       }}>Dividir</button>
       </div>
-      <div className="col-4">
-      <label>Total</label>
-      </div>
+      <div className="card-body"><input value={suma}/></div>
+      
     </div>
   )
 
