@@ -1,12 +1,10 @@
-import React, { useState } from "react";
+  /* import React, { useState } from "react";
 
 import "./App.css";
 
-
-
 function App() {
 
-  /* const [counter, setCounter] = useState(0);
+const [counter, setCounter] = useState(0);
 
   const [person, setPerson] = useState({
 
@@ -98,7 +96,7 @@ export default App;
 import React, { useState } from "react";
 import "./App.css";
 
-function App() {
+  function App() {
 
   const [people, setPeople] = useState([
     {
@@ -115,7 +113,26 @@ function App() {
   const [lastName, setLastname] = useState("");
 
   return (
+
     <div className="App">
+      <div className="col-lg-4">
+      <input type="number" name="numberOne"></input>
+      </div>
+
+      <div className="col-lg-4">
+      <input type="number" name="numberTwo"></input>
+        </div>
+
+        <div className="col-lg-4">
+        <button
+        onClick={() => {
+          sumar((current) => [{ numberOne, numberTwo }, ...current]);
+        }}
+      >
+        Sumar
+      </button>
+        </div>
+
       <input
         type="text"
         name="name"
@@ -143,6 +160,7 @@ function App() {
         ))}
       </ul>
     </div>
+
   );
 }
 
