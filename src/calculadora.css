@@ -29,7 +29,7 @@ body, div, section, a, span, p, button, input {
     font-size: 17px;
     border-radius: 50%;
     background: #FFF;
-    color: #EF6C00;
+    color: #fc7506;
     width: 22px;
     height: 22px;
     text-align: center;
@@ -60,7 +60,7 @@ body, div, section, a, span, p, button, input {
     color: #FFF;
   }
   #numbers .defaultButton.greenBtn {
-    background: #558B2F;
+    background: #193a01;
     color: #FFF;
   }
   #operations .defaultButton {
