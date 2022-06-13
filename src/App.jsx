@@ -33,7 +33,10 @@ function App() {
       }}>Restar</button>
       </div>
       <div className="col-4">
-      <button name="btnMultiplicar">Multiplicar</button>
+      <button name="btnMultiplicar"onClick={()=>{
+        const { one, two } = number
+        setSuma(Number(one) * Number(two))
+      }}>Multiplicar</button>
       </div>
       <div className="col-4">
       <button name="btnDividir">Dividir</button>
